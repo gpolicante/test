@@ -1,0 +1,7 @@
+
+site_exercicio:
+ image: httpd
+ ports:
+  - 8045:80
+ volumes:
+  - /tmp/site:/usr/local/apache2/htdocs
