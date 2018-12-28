@@ -68,3 +68,10 @@ resource "aws_kinesis_stream" "kinesis_streamer_demo_stream" {
     ]
 }
 
+
+## S3 
+
+resource "aws_s3_bucket" "logs" {
+  bucket = "lambda-datafile"
+  acl = "log-delivery-write"
+}
